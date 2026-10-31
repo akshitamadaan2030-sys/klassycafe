@@ -1,6 +1,6 @@
 from django.contrib import admin
-from TableReservation.models import table_reserveration
-class Table_Admin(admin.ModelAdmin):
-    list_display=("tagline","des","icon_1","icon_2","phone_1","phone_2","email_1","email_2")
-admin.site.register(table_reserveration,Table_Admin)
+from weekorder.models import week
+class week_admin(admin.ModelAdmin):
+    list_display = ["week_img","week_name","week_des","week_price"]
+admin.site.register(week,week_admin)
 # Register your models here.
